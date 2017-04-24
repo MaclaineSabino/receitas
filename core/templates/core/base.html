@@ -106,17 +106,8 @@
 
         <!-- Feature Row -->
         <div class="row">
-        	{% for rec in receitas %}
-            <article class="col-md-4 article-intro">
-                <!--<a href="#">
-                    <img class="img-responsive img-rounded" src="{{rec.imagem}}" alt="">
-                </a>-->
-                <h3>
-                    <a href="#">{{rec.nomeprato}} </a>
-                </h3>
-                <p>{{rec.ingredientes}}.</p>
-            </article>
-            {% endfor %}
+        	{% block content %}
+            {% endblock %}
             
         <!-- /.row -->
 
