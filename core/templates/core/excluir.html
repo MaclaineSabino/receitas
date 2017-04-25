@@ -6,7 +6,7 @@
                 <h1 class="page-header">Receitas especiais
                     
                 </h1>
-                <h3>Se delicie com nossas receitas especias, temos uma grande variedade de receitas para todos os tipos de pratos</h3>
+                <p>Se delicie com nossas receitas especias, temos uma grande variedade de receitas para todos os tipos de pratos</p>
             </div>
         </div>
         	{% for rec in receitas %}
@@ -18,6 +18,7 @@
                     <a href="{% url 'receitadet' pk=rec.pk %}">{{rec.nomeprato}} </a>
                 </h3>
                 <p>{{rec.ingredientes}}.</p>
+                <a id="link_excluir" href="{% url 'receita_excluir' pk=rec.pk%}">EXCLUIR</a>
                 
             </article>
             {% endfor %}

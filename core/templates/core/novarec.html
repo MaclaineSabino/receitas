@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+        	<article id="conteiner_formulario" class="col-md-4 article-intro">
+               <h1>Nova Receita</h1>
+               <form method="post">{% csrf_token %}
+               	<label for="id_imagem">imagem</label>
+               	{{form.imagem}}
+               	<label for="id_imagem">Nome do Prato</label>
+               	{{form.nomeprato}}
+               	<label for="id_imagem">Ingredientes</label>
+               	{{form.ingredientes}}
+               	<label for="id_imagem">Modo de Preparo</label>
+               	{{form.modopreparo}}
+               	<label for="id_imagem">Pessoas Servidas</label>
+               	{{form.qtdpessoas}}
+               	<label for="id_imagem">Tempo de preparo em minutos</label>
+               	{{form.tempopreparo}}
+               	<!--{{form.as_p}}-->
+               	
+               	<button type="submit">Salvar</button>
+               	
+               </form>
+            </article>
+            
+ {% endblock content%}     
+ 

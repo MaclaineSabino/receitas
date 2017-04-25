@@ -1,7 +1,7 @@
 from django.db import models
 
 class Receitas(models.Model):
-    imagem = models.CharField(max_length=200, default='null.jpg')
+    imagem = models.CharField(max_length=200, default='/static/images/null.jpg')
     nomeprato = models.CharField(max_length=100)
     ingredientes = models.TextField()
     modopreparo = models.TextField()

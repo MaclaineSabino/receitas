@@ -1,0 +1,20 @@
+{% extends 'core/base.html' %}
+{% load staticfiles %}
+{% block content %}
+        	<article id="conteiner_detalhe" class="col-md-4 article-intro">
+                <a href="#">
+                    <img class="img-responsive img-rounded" src="{{receit.imagem}}" alt="">
+                </a>
+                <h2>
+                 {{receit.nomeprato}} 
+                </h2>
+                <h4>Ingredientes </h4>
+                <p>{{receit.ingredientes}}.</p>
+                <h4>Modo de preparo </h4>
+                <p>{{receit.modopreparo}}.</p>
+                <p>Serve {{receit.qtdpessoas}} &nbsp; pessoas</p>
+                <p>duração:&nbsp; {{receit.tempopreparo}} minutos </p>
+            </article>
+            
+ {% endblock content%}     
+ 

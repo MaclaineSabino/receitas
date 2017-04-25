@@ -1,0 +1,47 @@
+
+#conteiner_formulario{
+	margin-left:30%;
+}
+
+#conteiner_formulario{
+	text-align:left;
+}
+
+#conteiner_formulario form textarea{
+	width:90%;
+}
+
+#conteiner_formulario form input{
+	width:90%;
+}
+
+#conteiner_detalhe{
+	margin-left:30%;
+}
+#icone_logo{
+	max-width:70px;
+	margin-top:-45px;
+	margin-left:15px;
+}
+
+#menu_drop{
+	
+	font-size:20px;
+	color:#FFFF00;
+	
+	
+}
+#link_excluir{
+	color:#FF0000;
+	font-weight:bolder;
+	background:#D3D3D3;
+	padding:5px;
+	border: solid 1px;
+}
+#link_editar{
+	color:#000080;
+	font-weight:bolder;
+	background:#D3D3D3;
+	padding:5px;
+	border: solid 1px;
+}
