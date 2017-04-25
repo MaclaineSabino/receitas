@@ -12,7 +12,7 @@
         	{% for rec in receitas %}
             <article class="col-md-4 article-intro">
                 <a href="#">
-                    <img class="img-responsive img-rounded" src="{{rec.imagem}}" alt="">
+                   <a href="{% url 'receitadet' pk=rec.pk %}"> <img class="img-responsive img-rounded" src="{{rec.imagem}}" alt=""></a>
                 </a>
                 <h3>
                     <a href="{% url 'receitadet' pk=rec.pk %}">{{rec.nomeprato}} </a>
